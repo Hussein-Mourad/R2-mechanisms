@@ -2344,9 +2344,14 @@ ULN and UDN Series&lt;p&gt;
 <pinref part="JP1" gate="A" pin="13"/>
 </segment>
 <segment>
-<pinref part="ENC1" gate="G$1" pin="SIG1"/>
-<wire x1="147.32" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91" grouprefs="ENCODER"/>
-<label x="144.78" y="139.7" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
+<pinref part="LD3" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="172.72" x2="101.6" y2="170.18" width="0.1524" layer="91" grouprefs="SWTCHES"/>
+<label x="101.6" y="170.18" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="SWTCHES"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91" grouprefs="SWTCHES"/>
+<label x="111.76" y="185.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SWTCHES"/>
 </segment>
 </net>
 <net name="PB_6" class="0">
@@ -2378,14 +2383,9 @@ ULN and UDN Series&lt;p&gt;
 <pinref part="JP1" gate="A" pin="15"/>
 </segment>
 <segment>
-<pinref part="LD3" gate="G$1" pin="C"/>
-<wire x1="101.6" y1="172.72" x2="101.6" y2="170.18" width="0.1524" layer="91" grouprefs="SWTCHES"/>
-<label x="101.6" y="170.18" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="SWTCHES"/>
-</segment>
-<segment>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91" grouprefs="SWTCHES"/>
-<label x="111.76" y="185.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SWTCHES"/>
+<pinref part="ENC1" gate="G$1" pin="SIG1"/>
+<wire x1="147.32" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="144.78" y="139.7" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
 </segment>
 </net>
 <net name="PB_8" class="0">

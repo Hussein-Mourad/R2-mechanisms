@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2779,21 +2779,6 @@ ULN and UDN Series&lt;p&gt;
 <label x="43.18" y="93.98" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="KL"/>
-<wire x1="53.34" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="58.42" y="129.54" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="KL"/>
-<wire x1="53.34" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="58.42" y="139.7" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="KL"/>
-<wire x1="53.34" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="58.42" y="149.86" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="A" pin="GND"/>
 <wire x1="86.36" y1="127" x2="81.28" y2="127" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
 <label x="83.82" y="127" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MECHANISMS"/>
@@ -2834,6 +2819,21 @@ ULN and UDN Series&lt;p&gt;
 <pinref part="IN" gate="G$1" pin="KL"/>
 <wire x1="15.24" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91" grouprefs="POWER"/>
 <label x="20.32" y="109.22" size="1.27" layer="95" xref="yes" grouprefs="POWER"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="KL"/>
+<wire x1="53.34" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="149.86" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="KL"/>
+<wire x1="53.34" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="139.7" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="KL"/>
+<wire x1="53.34" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="129.54" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 </net>
 <net name="O1" class="0">
@@ -2879,7 +2879,26 @@ ULN and UDN Series&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,84.0571,167.866,IMU2,,,,,"/>
+<approved hash="202,1,86.36,144.78,IC1,I1,,,,"/>
+<approved hash="202,1,86.36,142.24,IC1,I2,,,,"/>
+<approved hash="202,1,86.36,139.7,IC1,I3,,,,"/>
+<approved hash="202,1,86.36,137.16,IC1,I4,,,,"/>
+<approved hash="202,1,86.36,134.62,IC1,I5,,,,"/>
+<approved hash="202,1,86.36,132.08,IC1,I6,,,,"/>
+<approved hash="113,1,-4.84293,106.906,VIN,,,,,"/>
+<approved hash="113,1,-48.0229,183.106,TTL3,,,,,"/>
+<approved hash="113,1,-27.7029,183.106,TTL1,,,,,"/>
+<approved hash="113,1,-48.0229,132.306,JP1,,,,,"/>
+<approved hash="113,1,-38.3371,129.314,JP2,,,,,"/>
+<approved hash="113,1,58.951,114.831,FRAME1,,,,,"/>
+<approved hash="113,1,10.2502,109.22,IN,,,,,"/>
+<approved hash="113,1,49.8189,100.556,CYTRON,,,,,"/>
+<approved hash="113,1,47.9976,129.54,C3,,,,,"/>
+<approved hash="113,1,47.9976,139.7,C2,,,,,"/>
+<approved hash="113,1,47.9976,149.86,C1,,,,,"/>
+<approved hash="113,1,117.077,185.646,JP5,,,,,"/>
+<approved hash="113,1,89.1371,185.646,JP6,,,,,"/>
+<approved hash="113,1,61.1971,185.646,JP7,,,,,"/>
 </errors>
 </schematic>
 </drawing>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2047,6 +2047,7 @@ ULN and UDN Series&lt;p&gt;
 <part name="JP7" library="MIA_LIBRARY-2-2-2" deviceset="PINHD-2_DATA" device="" package3d_urn="urn:adsk.eagle:package:15814197/4"/>
 <part name="LD1" library="MIA_LIBRARY-2-2-2" deviceset="LED5MM" device="" package3d_urn="urn:adsk.eagle:package:15814139/2"/>
 <part name="U$1" library="MIA_LIBRARY-2-2-2" deviceset="RES-7" device="" package3d_urn="urn:adsk.eagle:package:15814110/3"/>
+<part name="ENC1" library="MIA_LIBRARY-2-2-2" deviceset="ENCODER" device="" package3d_urn="urn:adsk.eagle:package:15814199/5" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2089,31 +2090,31 @@ ULN and UDN Series&lt;p&gt;
 <instance part="IN" gate="G$2" x="10.16" y="104.14" smashed="yes" grouprefs="POWER">
 <attribute name="NAME" x="8.89" y="105.029" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CYTRON" gate="A" x="175.26" y="137.16" smashed="yes" grouprefs="MOTORS">
-<attribute name="NAME" x="168.91" y="145.415" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.91" y="127" size="1.778" layer="96"/>
+<instance part="CYTRON" gate="A" x="50.8" y="99.06" smashed="yes" grouprefs="MOTORS">
+<attribute name="NAME" x="44.45" y="107.315" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.45" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="-53.34" y="63.5" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="64.389" size="1.778" layer="95" rot="R180"/>
+<instance part="C3" gate="G$1" x="48.26" y="129.54" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="130.429" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C3" gate="G$2" x="-53.34" y="58.42" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="59.309" size="1.778" layer="95" rot="R180"/>
+<instance part="C3" gate="G$2" x="48.26" y="124.46" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="125.349" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$1" x="-53.34" y="73.66" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="74.549" size="1.778" layer="95" rot="R180"/>
+<instance part="C2" gate="G$1" x="48.26" y="139.7" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="140.589" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$2" x="-53.34" y="68.58" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="69.469" size="1.778" layer="95" rot="R180"/>
+<instance part="C2" gate="G$2" x="48.26" y="134.62" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="135.509" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C1" gate="G$1" x="-53.34" y="83.82" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="84.709" size="1.778" layer="95" rot="R180"/>
+<instance part="C1" gate="G$1" x="48.26" y="149.86" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="150.749" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C1" gate="G$2" x="-53.34" y="78.74" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-54.61" y="79.629" size="1.778" layer="95" rot="R180"/>
+<instance part="C1" gate="G$2" x="48.26" y="144.78" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="46.99" y="145.669" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="IC1" gate="A" x="-2.54" y="71.12" smashed="yes" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-10.16" y="82.042" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-10.16" y="55.88" size="1.778" layer="96"/>
+<instance part="IC1" gate="A" x="99.06" y="137.16" smashed="yes" grouprefs="MECHANISMS">
+<attribute name="NAME" x="91.44" y="148.082" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.44" y="121.92" size="1.778" layer="96"/>
 </instance>
 <instance part="LD3" gate="G$1" x="101.6" y="177.8" smashed="yes" grouprefs="SWTCHES">
 <attribute name="NAME" x="105.156" y="173.228" size="1.778" layer="95" rot="R90"/>
@@ -2139,14 +2140,15 @@ ULN and UDN Series&lt;p&gt;
 <attribute name="NAME" x="57.15" y="188.595" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.15" y="177.8" size="1.778" layer="96"/>
 </instance>
-<instance part="LD1" gate="G$1" x="-27.94" y="81.28" smashed="yes" rot="R180" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-31.496" y="85.852" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-33.655" y="88.392" size="1.778" layer="96" rot="R270"/>
+<instance part="LD1" gate="G$1" x="73.66" y="147.32" smashed="yes" rot="R180" grouprefs="MECHANISMS">
+<attribute name="NAME" x="70.104" y="151.892" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="67.945" y="154.432" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-27.94" y="71.12" smashed="yes" rot="R90" grouprefs="MECHANISMS">
-<attribute name="NAME" x="-29.4386" y="67.31" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-24.638" y="67.31" size="1.778" layer="96" rot="R90"/>
+<instance part="U$1" gate="G$1" x="73.66" y="137.16" smashed="yes" rot="R90" grouprefs="MECHANISMS">
+<attribute name="NAME" x="72.1614" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="76.962" y="133.35" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="ENC1" gate="G$1" x="177.8" y="139.7" smashed="yes" grouprefs="ENCODER"/>
 </instances>
 <busses>
 </busses>
@@ -2176,8 +2178,8 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="66.04" x2="-27.94" y2="63.5" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-27.94" y="63.5" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="73.66" y1="132.08" x2="73.66" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="73.66" y="129.54" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 </net>
 <net name="PB_14" class="0">
@@ -2341,6 +2343,21 @@ ULN and UDN Series&lt;p&gt;
 <label x="-53.34" y="124.46" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="PINOUT"/>
 <pinref part="JP1" gate="A" pin="13"/>
 </segment>
+<segment>
+<pinref part="ENC1" gate="G$1" pin="SIG1"/>
+<wire x1="147.32" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="144.78" y="139.7" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
+</segment>
+<segment>
+<pinref part="LD3" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="172.72" x2="101.6" y2="170.18" width="0.1524" layer="91" grouprefs="SWTCHES"/>
+<label x="101.6" y="170.18" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="SWTCHES"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91" grouprefs="SWTCHES"/>
+<label x="111.76" y="185.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SWTCHES"/>
+</segment>
 </net>
 <net name="PB_6" class="0">
 <segment>
@@ -2353,6 +2370,11 @@ ULN and UDN Series&lt;p&gt;
 <label x="-53.34" y="121.92" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="PINOUT"/>
 <pinref part="JP1" gate="A" pin="14"/>
 </segment>
+<segment>
+<pinref part="ENC1" gate="G$1" pin="SIG2"/>
+<wire x1="147.32" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="144.78" y="132.08" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
+</segment>
 </net>
 <net name="PB_7" class="0">
 <segment>
@@ -2364,16 +2386,6 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="-48.26" y1="119.38" x2="-53.34" y2="119.38" width="0.1524" layer="91" grouprefs="PINOUT"/>
 <label x="-53.34" y="119.38" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="PINOUT"/>
 <pinref part="JP1" gate="A" pin="15"/>
-</segment>
-<segment>
-<pinref part="LD3" gate="G$1" pin="C"/>
-<wire x1="101.6" y1="172.72" x2="101.6" y2="170.18" width="0.1524" layer="91" grouprefs="SWTCHES"/>
-<label x="101.6" y="170.18" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="SWTCHES"/>
-</segment>
-<segment>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91" grouprefs="SWTCHES"/>
-<label x="111.76" y="185.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SWTCHES"/>
 </segment>
 </net>
 <net name="PB_8" class="0">
@@ -2448,6 +2460,11 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="101.6" y1="182.88" x2="101.6" y2="180.34" width="0.1524" layer="91" grouprefs="SWTCHES"/>
 <label x="101.6" y="182.88" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ENC1" gate="G$1" pin="VCC"/>
+<wire x1="147.32" y1="154.94" x2="144.78" y2="154.94" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="144.78" y="154.94" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
+</segment>
 </net>
 <net name="VB" class="0">
 <segment>
@@ -2510,8 +2527,8 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CYTRON" gate="A" pin="4"/>
-<wire x1="172.72" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91" grouprefs="MOTORS"/>
-<label x="167.64" y="134.62" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
+<wire x1="48.26" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91" grouprefs="MOTORS"/>
+<label x="43.18" y="96.52" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 </net>
 <net name="PA_1" class="0">
@@ -2527,8 +2544,8 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CYTRON" gate="A" pin="3"/>
-<wire x1="172.72" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91" grouprefs="MOTORS"/>
-<label x="167.64" y="137.16" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
+<wire x1="48.26" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91" grouprefs="MOTORS"/>
+<label x="43.18" y="99.06" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 </net>
 <net name="PA_2" class="0">
@@ -2544,8 +2561,8 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CYTRON" gate="A" pin="2"/>
-<wire x1="172.72" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91" grouprefs="MOTORS"/>
-<label x="167.64" y="139.7" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
+<wire x1="48.26" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91" grouprefs="MOTORS"/>
+<label x="43.18" y="101.6" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 </net>
 <net name="PA_3" class="0">
@@ -2561,8 +2578,8 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CYTRON" gate="A" pin="1"/>
-<wire x1="172.72" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="91" grouprefs="MOTORS"/>
-<label x="167.64" y="142.24" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
+<wire x1="48.26" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91" grouprefs="MOTORS"/>
+<label x="43.18" y="104.14" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 </net>
 <net name="PA_4" class="0">
@@ -2758,28 +2775,28 @@ ULN and UDN Series&lt;p&gt;
 </segment>
 <segment>
 <pinref part="CYTRON" gate="A" pin="5"/>
-<wire x1="172.72" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91" grouprefs="MOTORS"/>
-<label x="167.64" y="132.08" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
+<wire x1="48.26" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91" grouprefs="MOTORS"/>
+<label x="43.18" y="93.98" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MOTORS"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="KL"/>
-<wire x1="-48.26" y1="63.5" x2="-43.18" y2="63.5" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="63.5" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="129.54" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="KL"/>
-<wire x1="-48.26" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="139.7" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="KL"/>
-<wire x1="-48.26" y1="83.82" x2="-43.18" y2="83.82" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="83.82" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="149.86" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="GND"/>
-<wire x1="-15.24" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-17.78" y="60.96" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="86.36" y1="127" x2="81.28" y2="127" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="83.82" y="127" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="2"/>
@@ -2801,12 +2818,17 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="15.24" y1="104.14" x2="20.32" y2="104.14" width="0.1524" layer="91" grouprefs="POWER"/>
 <label x="20.32" y="104.14" size="1.27" layer="95" xref="yes" grouprefs="POWER"/>
 </segment>
+<segment>
+<pinref part="ENC1" gate="G$1" pin="GND"/>
+<wire x1="147.32" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="144.78" y="147.32" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="CD+"/>
-<wire x1="10.16" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="15.24" y="60.96" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="111.76" y1="127" x2="116.84" y2="127" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="116.84" y="127" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="IN" gate="G$1" pin="KL"/>
@@ -2817,40 +2839,40 @@ ULN and UDN Series&lt;p&gt;
 <net name="O1" class="0">
 <segment>
 <pinref part="C1" gate="G$2" pin="KL"/>
-<wire x1="-48.26" y1="78.74" x2="-43.18" y2="78.74" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="78.74" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="144.78" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$2" pin="KL"/>
-<wire x1="-48.26" y1="68.58" x2="-43.18" y2="68.58" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="68.58" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="134.62" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$2" pin="KL"/>
-<wire x1="-48.26" y1="58.42" x2="-43.18" y2="58.42" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<label x="-43.18" y="58.42" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
+<wire x1="53.34" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="58.42" y="124.46" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="O7"/>
-<wire x1="10.16" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
-<label x="15.24" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="111.76" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<label x="116.84" y="129.54" size="1.27" layer="95" xref="yes" grouprefs="MECHANISMS"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
 <pinref part="LD1" gate="G$1" pin="A"/>
-<wire x1="-27.94" y1="76.2" x2="-27.94" y2="78.74" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<wire x1="73.66" y1="142.24" x2="73.66" y2="144.78" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="LD1" gate="G$1" pin="C"/>
-<wire x1="-27.94" y1="86.36" x2="-27.94" y2="88.9" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
-<wire x1="-27.94" y1="88.9" x2="-22.86" y2="88.9" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<wire x1="73.66" y1="152.4" x2="73.66" y2="154.94" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<wire x1="73.66" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
 <pinref part="IC1" gate="A" pin="I7"/>
-<wire x1="-15.24" y1="63.5" x2="-22.86" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="63.5" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="129.54" x2="78.74" y2="129.54" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
+<wire x1="78.74" y1="129.54" x2="78.74" y2="154.94" width="0.1524" layer="91" grouprefs="MECHANISMS"/>
 </segment>
 </net>
 </nets>
